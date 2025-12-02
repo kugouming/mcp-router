@@ -7,7 +7,7 @@ import {
   McpManagerRequestLogEntry,
   AGGREGATOR_SERVER_ID,
   AGGREGATOR_SERVER_NAME,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { McpLoggerRepository } from "./mcp-logger.repository";
 
 /**

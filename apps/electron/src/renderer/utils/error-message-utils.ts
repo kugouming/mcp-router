@@ -1,4 +1,4 @@
-import { ParsedPaymentError } from "@mcp_router/shared";
+import { ParsedPaymentError } from "@kugouming/shared";
 
 /**
  * Error message parsing utilities for better user experience

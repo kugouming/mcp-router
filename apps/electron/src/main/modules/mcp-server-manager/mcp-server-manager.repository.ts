@@ -3,7 +3,7 @@ import {
   SqliteManager,
   getSqliteManager,
 } from "../../infrastructure/database/sqlite-manager";
-import { MCPServer, MCPServerConfig } from "@mcp_router/shared";
+import { MCPServer, MCPServerConfig } from "@kugouming/shared";
 import { v4 as uuidv4 } from "uuid";
 
 /**

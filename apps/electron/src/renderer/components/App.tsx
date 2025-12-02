@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import PageLayout from "./layout/PageLayout";
-import { Sonner } from "@mcp_router/ui";
+import { Sonner } from "@kugouming/ui";
 import DiscoverWrapper from "@/renderer/components/mcp/server/DiscoverWrapper";
 import Home from "./Home";
 import { useTranslation } from "react-i18next";
 import SidebarComponent from "./Sidebar";
-import { SidebarProvider } from "@mcp_router/ui";
+import { SidebarProvider } from "@kugouming/ui";
 import McpAppsManager from "@/renderer/components/mcp/apps/McpAppsManager";
 import LogViewer from "@/renderer/components/mcp/log/LogViewer";
 import Settings from "./setting/Settings";

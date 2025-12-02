@@ -1,6 +1,6 @@
 import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { MCPServer, UNASSIGNED_PROJECT_ID } from "@mcp_router/shared";
+import { MCPServer, UNASSIGNED_PROJECT_ID } from "@kugouming/shared";
 import {
   parseResourceUri,
   createResourceUri,

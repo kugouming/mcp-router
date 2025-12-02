@@ -4,7 +4,7 @@ import {
   MCPServerConfig,
   ServerState,
   PlatformAPI,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 
 export interface ServerStoreState extends ServerState {
   // Actions

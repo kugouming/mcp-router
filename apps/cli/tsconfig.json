@@ -8,8 +8,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@mcp_router/shared": ["../../packages/shared/src/index.ts"],
-      "@mcp_router/shared/*": ["../../packages/shared/src/*"]
+      "@kugouming/shared": ["../../packages/shared/src/index.ts"],
+      "@kugouming/shared/*": ["../../packages/shared/src/*"]
     }
   },
   "references": [{ "path": "../../packages/shared" }],

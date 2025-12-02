@@ -3,7 +3,7 @@ import {
   SqliteManager,
   getSqliteManager,
 } from "../../infrastructure/database/sqlite-manager";
-import { Workspace } from "@mcp_router/shared";
+import { Workspace } from "@kugouming/shared";
 
 export class WorkspaceRepository extends BaseRepository<Workspace> {
   private static instance: WorkspaceRepository | null = null;

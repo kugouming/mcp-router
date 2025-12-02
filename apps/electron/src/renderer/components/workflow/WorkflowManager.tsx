@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { WorkflowDefinition, HookModule } from "@mcp_router/shared";
+import { WorkflowDefinition, HookModule } from "@kugouming/shared";
 import WorkflowEditor from "./WorkflowEditor";
 import {
   Button,
@@ -8,8 +8,8 @@ import {
   Label,
   RadioGroup,
   RadioGroupItem,
-} from "@mcp_router/ui";
-import { Card } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Card } from "@kugouming/ui";
 import {
   Plus,
   Trash2,

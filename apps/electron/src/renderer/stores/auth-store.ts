@@ -4,7 +4,7 @@ import {
   AuthStoreState,
   UserInfo,
   PlatformAPI,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 
 export interface AuthStoreInterface extends AuthStoreState {
   // Actions

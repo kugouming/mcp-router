@@ -19,7 +19,7 @@ MCP Routerプロジェクトでは、複数のデータベーステーブルを�
 全てのテーブル定義を`schema/tables/`ディレクトリ配下のTypeScriptファイルで管理する。各スキーマファイルは以下の構造を持つ：
 
 ```typescript
-import { DatabaseTableSchema } from "@mcp_router/shared";
+import { DatabaseTableSchema } from "@kugouming/shared";
 
 export const TABLE_NAME_SCHEMA: DatabaseTableSchema = {
   createSQL: `CREATE TABLE IF NOT EXISTS ...`,

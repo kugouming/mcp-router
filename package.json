@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcp-router/mcp-router"
+    "url": "https://github.com/kugouming/mcp-router"
   },
   "engines": {
     "node": ">=20.0.0",
@@ -12,14 +12,14 @@
   },
   "packageManager": "pnpm@10.22.0",
   "scripts": {
-    "dev": "turbo run dev --filter=@mcp_router/shared --filter=@mcp_router/ui --filter=@mcp_router/electron",
+    "dev": "turbo run dev --filter=@kugouming/shared --filter=@kugouming/ui --filter=@kugouming/electron",
     "build": "turbo run build",
-    "publish": "turbo run publish --filter=@mcp_router/electron",
+    "publish": "turbo run publish --filter=@kugouming/electron",
     "make": "turbo run make",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs --fix",
     "typecheck": "turbo run typecheck",
     "knip": "knip",
-    "test:e2e": "pnpm --filter @mcp_router/electron run test:e2e",
+    "test:e2e": "pnpm --filter @kugouming/electron run test:e2e",
     "postinstall": "electron-rebuild"
   },
   "keywords": [],

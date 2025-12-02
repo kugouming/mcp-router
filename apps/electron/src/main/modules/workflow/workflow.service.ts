@@ -1,4 +1,4 @@
-import { WorkflowDefinition } from "@mcp_router/shared";
+import { WorkflowDefinition } from "@kugouming/shared";
 import {
   getWorkflowRepository,
   WorkflowRepository,

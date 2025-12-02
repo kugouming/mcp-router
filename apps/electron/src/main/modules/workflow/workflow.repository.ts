@@ -1,5 +1,5 @@
 import { getSqliteManager } from "../../infrastructure/database/sqlite-manager";
-import { WorkflowDefinition } from "@mcp_router/shared";
+import { WorkflowDefinition } from "@kugouming/shared";
 import { v4 as uuidv4 } from "uuid";
 
 /**

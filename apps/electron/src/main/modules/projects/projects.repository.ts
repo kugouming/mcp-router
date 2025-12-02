@@ -1,5 +1,5 @@
 import { BaseRepository } from "@/main/infrastructure/database/base-repository";
-import type { Project } from "@mcp_router/shared";
+import type { Project } from "@kugouming/shared";
 import type { SqliteManager } from "@/main/infrastructure/database/sqlite-manager";
 import { getSqliteManager } from "@/main/infrastructure/database/sqlite-manager";
 

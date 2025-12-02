@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { UIState, ToastMessage, DialogState } from "@mcp_router/shared";
+import { UIState, ToastMessage, DialogState } from "@kugouming/shared";
 
 interface UIStoreState extends UIState {
   // Actions for loading

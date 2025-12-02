@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { MCPServer } from "@mcp_router/shared";
-import { ScrollArea } from "@mcp_router/ui";
-import { Badge } from "@mcp_router/ui";
-import { Switch } from "@mcp_router/ui";
+import { MCPServer } from "@kugouming/shared";
+import { ScrollArea } from "@kugouming/ui";
+import { Badge } from "@kugouming/ui";
+import { Switch } from "@kugouming/ui";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import {
   IconSearch,
   IconServer,
@@ -41,7 +41,7 @@ import { showServerError } from "@/renderer/components/common";
 import { ServerErrorModal } from "@/renderer/components/common/ServerErrorModal";
 import { ServerCardCompact } from "@/renderer/components/mcp/server/ServerCardCompact";
 import { Link } from "react-router-dom";
-import { Button } from "@mcp_router/ui";
+import { Button } from "@kugouming/ui";
 import { LoginScreen } from "@/renderer/components/auth/LoginScreen";
 import ServerDetailsAdvancedSheet from "@/renderer/components/mcp/server/server-details/ServerDetailsAdvancedSheet";
 import ServerSettingsModal from "@/renderer/components/mcp/server/ServerSettingsModal";

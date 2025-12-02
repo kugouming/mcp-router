@@ -18,7 +18,7 @@ This repository is a monorepo managed with `pnpm` and `turbo`.
 The main parts are:
 
 - `apps/electron` — Desktop app (Electron)
-- `apps/cli` — CLI tool (`@mcp_router/cli`)
+- `apps/cli` — CLI tool (`@kugouming/cli`)
 - `packages/shared` — Shared logic and TypeScript types
 - `packages/remote-api-types` — Remote API schemas and types
 - `packages/ui` — Shared UI components

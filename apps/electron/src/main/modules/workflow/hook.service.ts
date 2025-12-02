@@ -1,4 +1,4 @@
-import { HookModule } from "@mcp_router/shared";
+import { HookModule } from "@kugouming/shared";
 import { getHookRepository, HookRepository } from "./hook.repository";
 import vm from "vm";
 

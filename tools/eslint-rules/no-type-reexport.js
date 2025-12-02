@@ -3,13 +3,13 @@ module.exports = {
     type: "problem",
     docs: {
       description:
-        "Disallow re-exporting types from modules other than @mcp_router/shared",
+        "Disallow re-exporting types from modules other than @kugouming/shared",
       category: "Best Practices",
       recommended: true,
     },
     messages: {
       noTypeReexport:
-        "Type re-exports are only allowed from @mcp_router/shared package. Import types directly from @mcp_router/shared instead.",
+        "Type re-exports are only allowed from @kugouming/shared package. Import types directly from @kugouming/shared instead.",
     },
     schema: [],
   },
@@ -20,8 +20,8 @@ module.exports = {
         if (node.exportKind === "type" && node.source) {
           const sourceValue = node.source.value;
 
-          // Allow re-exports only from @mcp_router/shared
-          if (!sourceValue.startsWith("@mcp_router/shared")) {
+          // Allow re-exports only from @kugouming/shared
+          if (!sourceValue.startsWith("@kugouming/shared")) {
             context.report({
               node,
               messageId: "noTypeReexport",
@@ -37,7 +37,7 @@ module.exports = {
 
           if (hasTypeExport) {
             const sourceValue = node.source.value;
-            if (!sourceValue.startsWith("@mcp_router/shared")) {
+            if (!sourceValue.startsWith("@kugouming/shared")) {
               context.report({
                 node,
                 messageId: "noTypeReexport",
@@ -53,7 +53,7 @@ module.exports = {
           const parent = node.parent;
           if (parent.type === "ExportNamedDeclaration" && parent.source) {
             const sourceValue = parent.source.value;
-            if (!sourceValue.startsWith("@mcp_router/shared")) {
+            if (!sourceValue.startsWith("@kugouming/shared")) {
               context.report({
                 node,
                 messageId: "noTypeReexport",

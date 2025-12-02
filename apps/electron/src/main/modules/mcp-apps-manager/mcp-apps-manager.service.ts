@@ -19,7 +19,7 @@ import {
   MCPConnectionResult,
   MCPInputParam,
   TokenServerAccess,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 
 // Internal modules
@@ -34,12 +34,19 @@ import {
 import os from "os";
 
 // SVGアイコンのインポート
-import claudeIcon from "../../../../public/images/apps/claude.svg";
-import clineIcon from "../../../../public/images/apps/cline.svg";
-import windsurfIcon from "../../../../public/images/apps/windsurf.svg";
-import cursorIcon from "../../../../public/images/apps/cursor.svg";
-import vscodeIcon from "../../../../public/images/apps/vscode.svg";
-import openAiIcon from "../../../../public/images/apps/openai.svg";
+// import claudeIcon from "../../../../public/images/apps/claude.svg";
+// import clineIcon from "../../../../public/images/apps/cline.svg";
+// import windsurfIcon from "../../../../public/images/apps/windsurf.svg";
+// import cursorIcon from "../../../../public/images/apps/cursor.svg";
+// import vscodeIcon from "../../../../public/images/apps/vscode.svg";
+// import openAiIcon from "../../../../public/images/apps/openai.svg";
+
+const claudeIcon = "";
+const clineIcon = "";
+const windsurfIcon = "";
+const cursorIcon = "";
+const vscodeIcon = "";
+const openAiIcon = "";
 
 // アイコンのマッピング
 const ICON_MAP: Record<string, string> = {
@@ -253,7 +260,7 @@ export class McpAppsManagerService extends SingletonService<
   private createMcpRouterConfig(tokenId: string): McpRouterConfig {
     return {
       command: "npx",
-      args: ["-y", "@mcp_router/cli@latest", "connect"],
+      args: ["-y", "@kugouming/cli@latest", "connect"],
       env: {
         MCPR_TOKEN: tokenId,
       },
@@ -322,7 +329,7 @@ export class McpAppsManagerService extends SingletonService<
    * 生成フォーマット:
    * [mcp_servers.mcp_router]
    * command = "npx"
-   * args    = ["-y", "@mcp_router/cli@latest"]
+   * args    = ["-y", "@kugouming/cli@latest"]
    *
    * [mcp_servers.mcp_router.env]
    * MCPR_TOKEN = "<token>"
@@ -346,7 +353,7 @@ export class McpAppsManagerService extends SingletonService<
     const blockMain =
       `[mcp_servers.mcp_router]\n` +
       `command = "${command}"\n` +
-      `args    = ["-y", "@mcp_router/cli@latest", "connect"]\n` +
+      `args    = ["-y", "@kugouming/cli@latest", "connect"]\n` +
       `startup_timeout_sec = 120\n`;
     let blockEnv =
       `\n[mcp_servers.mcp_router.env]\n` + `MCPR_TOKEN = "${tokenId}"\n`;

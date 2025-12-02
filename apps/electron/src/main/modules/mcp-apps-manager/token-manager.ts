@@ -5,7 +5,7 @@ import {
   TokenGenerateOptions,
   TokenValidationResult,
   TokenServerAccess,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 
 /**
  * トークン管理機能を提供するクラス

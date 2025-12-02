@@ -352,7 +352,7 @@
     "creating": "作成中...",
     "projectSettings": "プロジェクト設定",
     "projectSettingsDescription": "プロジェクトでは、MCPサーバーを利用するコンテキストを分離できます。",
-    "projectSettingsCliHint": "プロジェクトに割り当てたサーバーを利用するには、npx -y @mcp_router/cli connect --project <project-name> のように指定します。"
+    "projectSettingsCliHint": "プロジェクトに割り当てたサーバーを利用するには、npx -y @kugouming/cli connect --project <project-name> のように指定します。"
   },
   "serverSettings": {
     "title": "{{serverName}} 設定",

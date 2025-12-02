@@ -1,5 +1,5 @@
 {
-  "name": "@mcp_router/remote-api-types",
+  "name": "@kugouming/remote-api-types",
   "version": "0.5.4",
   "description": "tRPC type definitions and schemas for MCP Router remote API",
   "keywords": [
@@ -10,13 +10,13 @@
     "schema",
     "api"
   ],
-  "homepage": "https://github.com/mcp-router/mcp-router#readme",
+  "homepage": "https://github.com/kugouming/mcp-router#readme",
   "bugs": {
-    "url": "https://github.com/mcp-router/mcp-router/issues"
+    "url": "https://github.com/kugouming/mcp-router/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcp-router/mcp-router.git",
+    "url": "git+https://github.com/kugouming/mcp-router.git",
     "directory": "packages/remote-api-types"
   },
   "license": "Apache-2.0",
@@ -59,7 +59,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@mcp_router/shared": "workspace:*",
+    "@kugouming/shared": "workspace:*",
     "@types/node": "^20.19.16",
     "eslint": "^9.35.0",
     "tsup": "^8.5.0",

@@ -1,5 +1,5 @@
 import { create, StoreApi, UseBoundStore } from "zustand";
-import type { PlatformAPI, Theme } from "@mcp_router/shared";
+import type { PlatformAPI, Theme } from "@kugouming/shared";
 
 export interface ThemeStoreState {
   theme: Theme;

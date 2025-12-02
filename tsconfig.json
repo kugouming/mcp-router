@@ -14,8 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@mcp_router/shared": ["packages/shared/src"],
-      "@mcp_router/shared/*": ["packages/shared/src/*"]
+      "@kugouming/shared": ["packages/shared/src"],
+      "@kugouming/shared/*": ["packages/shared/src/*"]
     }
   },
   "references": [

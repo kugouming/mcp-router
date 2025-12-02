@@ -1,5 +1,5 @@
 import { getSqliteManager } from "../../infrastructure/database/sqlite-manager";
-import { HookModule } from "@mcp_router/shared";
+import { HookModule } from "@kugouming/shared";
 import { v4 as uuidv4 } from "uuid";
 
 /**

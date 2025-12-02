@@ -87,7 +87,7 @@ Always import types from the shared package:
 
 ```typescript
 // ✅ Good
-import { MCPServer } from '@mcp_router/shared/types';
+import { MCPServer } from '@kugouming/shared/types';
 
 // ❌ Bad - local type definition
 interface MCPServer {
@@ -101,7 +101,7 @@ When you need custom types, extend from shared types:
 
 ```typescript
 // ✅ Good
-import { MCPServer } from '@mcp_router/shared/types';
+import { MCPServer } from '@kugouming/shared/types';
 
 interface ExtendedMCPServer extends MCPServer {
   customField: string;
@@ -121,7 +121,7 @@ export interface DBUser {
 }
 
 // In mapper
-import { User } from '@mcp_router/shared/types';
+import { User } from '@kugouming/shared/types';
 
 export function mapDBUserToUser(dbUser: DBUser): User {
   // mapping logic
@@ -177,10 +177,10 @@ export interface MCPServerConfig {
 }
 
 // apps/electron/src/services/mcp-service.ts
-import { MCPServerConfig } from '@mcp_router/shared/types';
+import { MCPServerConfig } from '@kugouming/shared/types';
 
 // apps/web/src/components/ServerList.tsx
-import { MCPServerConfig } from '@mcp_router/shared/types';
+import { MCPServerConfig } from '@kugouming/shared/types';
 ```
 
 ## Benefits

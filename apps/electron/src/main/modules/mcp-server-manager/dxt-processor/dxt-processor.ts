@@ -7,7 +7,7 @@ import {
 import * as fs from "fs";
 import * as path from "path";
 import * as crypto from "crypto";
-import { MCPServerConfig } from "@mcp_router/shared";
+import { MCPServerConfig } from "@kugouming/shared";
 import { convertDxtManifestToMCPServerConfig } from "./dxt-converter";
 
 export async function processDxtFile(

@@ -3,7 +3,7 @@ import {
   WorkflowNode,
   WorkflowEdge,
   WorkflowHook,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { getHookService } from "./hook.service";
 
 /**

@@ -48,10 +48,10 @@ After setting up MCP Router, you can connect to MCP Router using the CLI:
 # Set your MCP Router token (Issued when adding a custom app)
 export MCPR_TOKEN="mcpr_your_token"
 # To connect to MCP Router, run:
-npx -y @mcp_router/cli connect
+npx -y @kugouming/cli connect
 
 # If you want to use project, run:
-npx -y @mcp_router/cli connect --project <project-name>
+npx -y @kugouming/cli connect --project <project-name>
 ```
 
 ## 🚀 Features

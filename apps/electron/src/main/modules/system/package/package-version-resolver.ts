@@ -8,7 +8,7 @@ import * as semver from "semver";
 import { run, commandExists } from "@/main/utils/env-utils";
 import { installPNPM, installUV } from "./install-package-manager";
 import { logError } from "@/main/utils/logger";
-import { PackageUpdateInfo, ServerPackageUpdates } from "@mcp_router/shared";
+import { PackageUpdateInfo, ServerPackageUpdates } from "@kugouming/shared";
 
 /**
  * Extract the package name without version from a package specifier

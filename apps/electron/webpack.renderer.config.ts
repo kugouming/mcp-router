@@ -26,16 +26,12 @@ export const rendererConfig: Configuration = {
     modules: [path.resolve(__dirname, "../../node_modules"), "node_modules"],
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@mcp_router/shared": path.resolve(
+      "@kugouming/shared": path.resolve(
         __dirname,
         "../../packages/shared/src",
       ),
-      "@mcp_router/platform-api": path.resolve(
-        __dirname,
-        "../../packages/platform-api/src",
-      ),
-      "@mcp_router/ui": path.resolve(__dirname, "../../packages/ui/src"),
-      "@mcp_router/tailwind-config": path.resolve(
+      "@kugouming/ui": path.resolve(__dirname, "../../packages/ui/src"),
+      "@kugouming/tailwind-config": path.resolve(
         __dirname,
         "../../packages/tailwind-config",
       ),

@@ -20,8 +20,8 @@ import {
   WorkflowDefinition,
   WorkflowHook,
   HookModule,
-} from "@mcp_router/shared";
-import { Button } from "@mcp_router/ui";
+} from "@kugouming/shared";
+import { Button } from "@kugouming/ui";
 import { Plus, Save, X, Check } from "lucide-react";
 import {
   Input,
@@ -31,7 +31,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import { usePlatformAPI } from "../../platform-api/hooks/use-platform-api";
 import HookModuleManager from "./HookModuleManager";
 import HookModuleEditor from "./HookModuleEditor";

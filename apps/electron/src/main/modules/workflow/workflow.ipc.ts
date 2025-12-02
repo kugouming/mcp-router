@@ -1,6 +1,6 @@
 import { ipcMain } from "electron";
 import { getWorkflowService } from "@/main/modules/workflow/workflow.service";
-import type { WorkflowDefinition } from "@mcp_router/shared";
+import type { WorkflowDefinition } from "@kugouming/shared";
 
 /**
  * ワークフロー関連のIPCハンドラーを登録

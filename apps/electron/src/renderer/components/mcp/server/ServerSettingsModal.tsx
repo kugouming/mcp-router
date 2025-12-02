@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { MCPServer, Project } from "@mcp_router/shared";
+import type { MCPServer, Project } from "@kugouming/shared";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
   Separator,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 
 type Props = {
   open: boolean;

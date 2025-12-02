@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Button } from "@mcp_router/ui";
+import { Button } from "@kugouming/ui";
 import { usePlatformAPI } from "@/renderer/platform-api";
 import {
   Card,
@@ -8,28 +8,28 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@mcp_router/ui";
-import { Badge } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Badge } from "@kugouming/ui";
 import { useTranslation } from "react-i18next";
-import { Input } from "@mcp_router/ui";
-import { Checkbox } from "@mcp_router/ui";
-import { Label } from "@mcp_router/ui";
+import { Input } from "@kugouming/ui";
+import { Checkbox } from "@kugouming/ui";
+import { Label } from "@kugouming/ui";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import HowToUse, { HowToUseHandle } from "./HowToUse";
 import { toast } from "sonner";
-import { ScrollArea, ScrollBar } from "@mcp_router/ui";
+import { ScrollArea, ScrollBar } from "@kugouming/ui";
 
 import {
   McpApp,
   McpAppsManagerResult,
   TokenServerAccess,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import {
   UNASSIGNED_PROJECT_ID,
   useProjectStore,

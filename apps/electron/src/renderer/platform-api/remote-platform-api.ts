@@ -1,16 +1,16 @@
-import type { PlatformAPI } from "@mcp_router/shared";
+import type { PlatformAPI } from "@kugouming/shared";
 import {
   createRemoteAPIClient,
   type RemoteAPIClient,
-} from "@mcp_router/remote-api-types";
-import { MCPServer, MCPServerConfig, MCPTool } from "@mcp_router/shared";
+} from "@kugouming/remote-api-types";
+import { MCPServer, MCPServerConfig, MCPTool } from "@kugouming/shared";
 import type {
   ServerStatus,
   CreateServerInput,
   LogQueryOptions,
   LogQueryResult,
-} from "@mcp_router/shared";
-import type { RequestLogEntry } from "@mcp_router/shared";
+} from "@kugouming/shared";
+import type { RequestLogEntry } from "@kugouming/shared";
 
 interface RemoteWorkspaceConfig {
   apiUrl: string;

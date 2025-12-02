@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardDescription, CardTitle } from "@mcp_router/ui";
+import { Card, CardContent, CardDescription, CardTitle } from "@kugouming/ui";
 
 interface MessageCardProps {
   icon?: React.ReactNode;

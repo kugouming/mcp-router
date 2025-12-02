@@ -4,7 +4,7 @@
  */
 
 import { useWorkspaceStore } from "@/renderer/stores/workspace-store";
-import type { PlatformAPI } from "@mcp_router/shared";
+import type { PlatformAPI } from "@kugouming/shared";
 
 export function usePlatformAPI(): PlatformAPI {
   // Get the platform API directly from the workspace store

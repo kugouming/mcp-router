@@ -7,7 +7,7 @@ import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse";
 import { getPlatformAPIManager } from "../../workspace/platform-api-manager";
 import { TokenValidator } from "../token-validator";
 import { ProjectRepository } from "../../projects/projects.repository";
-import { PROJECT_HEADER, UNASSIGNED_PROJECT_ID } from "@mcp_router/shared";
+import { PROJECT_HEADER, UNASSIGNED_PROJECT_ID } from "@kugouming/shared";
 
 /**
  * HTTP server that exposes MCP functionality through REST endpoints

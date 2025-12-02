@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { RequestLogEntry } from "@mcp_router/shared";
+import { RequestLogEntry } from "@kugouming/shared";
 import {
   Dialog,
   DialogContent,
@@ -7,9 +7,9 @@ import {
   DialogTitle,
   DialogFooter,
   DialogDescription,
-} from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
-import { Card } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
+import { Card } from "@kugouming/ui";
 import { useTranslation } from "react-i18next";
 import { formatDateI18n } from "@/renderer/utils/date-utils";
 import { Copy, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";

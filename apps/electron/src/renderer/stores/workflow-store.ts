@@ -3,7 +3,7 @@ import type {
   WorkflowDefinition,
   WorkflowNode,
   WorkflowEdge,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 
 export interface WorkflowStoreState {
   // Workflow state

@@ -1,10 +1,10 @@
 import React from "react";
-import { MCPServer } from "@mcp_router/shared";
+import { MCPServer } from "@kugouming/shared";
 import { useTranslation } from "react-i18next";
 import { Server, Settings, Info } from "lucide-react";
-import { Label } from "@mcp_router/ui";
-import { Input } from "@mcp_router/ui";
-import { ScrollArea } from "@mcp_router/ui";
+import { Label } from "@kugouming/ui";
+import { Input } from "@kugouming/ui";
+import { ScrollArea } from "@kugouming/ui";
 
 interface ServerDetailsRemoteProps {
   server: MCPServer;

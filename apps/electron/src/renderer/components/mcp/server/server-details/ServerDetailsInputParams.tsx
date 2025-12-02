@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { MCPServer, MCPInputParam } from "@mcp_router/shared";
+import { MCPServer, MCPInputParam } from "@kugouming/shared";
 import { useTranslation } from "react-i18next";
 import { Info, Eye, EyeOff } from "lucide-react";
-import { Label } from "@mcp_router/ui";
-import { Input } from "@mcp_router/ui";
-import { Checkbox } from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
+import { Label } from "@kugouming/ui";
+import { Input } from "@kugouming/ui";
+import { Checkbox } from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
 import { usePlatformAPI } from "@/renderer/platform-api/hooks/use-platform-api";
 
 interface ServerDetailsInputParamsProps {

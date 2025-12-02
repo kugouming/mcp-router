@@ -1,4 +1,4 @@
-import { MCPServer } from "@mcp_router/shared";
+import { MCPServer } from "@kugouming/shared";
 
 /**
  * Check if a server has unset required input parameters

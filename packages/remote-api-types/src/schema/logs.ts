@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { RequestLogEntry } from "@mcp_router/shared";
+import type { RequestLogEntry } from "@kugouming/shared";
 
 // LogQueryOptions Zodスキーマ
 export const logQueryOptionsSchema = z.object({

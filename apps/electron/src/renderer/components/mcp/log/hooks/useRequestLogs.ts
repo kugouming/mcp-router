@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { RequestLogEntry } from "@mcp_router/shared";
+import { RequestLogEntry } from "@kugouming/shared";
 import { usePlatformAPI } from "@/renderer/platform-api";
 
 interface RequestLogsParams {

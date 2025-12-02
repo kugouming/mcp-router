@@ -8,7 +8,7 @@ import {
   MCPServerConfig,
   MCPConnectionResult,
   MCPInputParam,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 
 /**
  * MCPクライアント接続機能を提供するクラス

@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import type { Project } from "@mcp_router/shared";
+import type { Project } from "@kugouming/shared";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -18,7 +18,7 @@ import {
   DialogTitle,
   Input,
   ScrollArea,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import { Pencil, Trash2, Info } from "lucide-react";
 import { toast } from "sonner";
 import { UNASSIGNED_PROJECT_ID } from "@/renderer/stores";
@@ -165,7 +165,7 @@ export const ProjectSettingsModal: React.FC<Props> = ({
             <span>
               {t("projects.projectSettingsCliHint", {
                 defaultValue:
-                  "To use servers assigned to a project from the CLI, run `npx -y @mcp_router/cli connect --project <project-name>`.",
+                  "To use servers assigned to a project from the CLI, run `npx -y @kugouming/cli connect --project <project-name>`.",
               })}
             </span>
           </div>

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { usePlatformAPI } from "@/renderer/platform-api";
-import { Button } from "@mcp_router/ui";
+import { Button } from "@kugouming/ui";
 import {
   Upload,
   AlertTriangle,
@@ -19,16 +19,16 @@ import {
   processMcpServerConfigs,
 } from "./utils/mcp-server-utils";
 import { toast } from "sonner";
-import { Textarea } from "@mcp_router/ui";
-import { Alert, AlertDescription, AlertTitle } from "@mcp_router/ui";
-import { Input } from "@mcp_router/ui";
-import { Label } from "@mcp_router/ui";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@mcp_router/ui";
+import { Textarea } from "@kugouming/ui";
+import { Alert, AlertDescription, AlertTitle } from "@kugouming/ui";
+import { Input } from "@kugouming/ui";
+import { Label } from "@kugouming/ui";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@kugouming/ui";
 import { v4 as uuidv4 } from "uuid";
-import { MCPServerConfig } from "@mcp_router/shared";
-import { Checkbox } from "@mcp_router/ui";
-import { RadioGroup, RadioGroupItem } from "@mcp_router/ui";
-import { ScrollArea } from "@mcp_router/ui";
+import { MCPServerConfig } from "@kugouming/shared";
+import { Checkbox } from "@kugouming/ui";
+import { RadioGroup, RadioGroupItem } from "@kugouming/ui";
+import { ScrollArea } from "@kugouming/ui";
 import { useServerStore } from "@/renderer/stores";
 
 interface EnvVariable {

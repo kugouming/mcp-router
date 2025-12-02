@@ -1,7 +1,7 @@
 import { promises as fsPromises } from "fs";
 import { parse as parseToml } from "smol-toml";
 import { getServerService } from "@/main/modules/mcp-server-manager/server-service";
-import { MCPServerConfig, ClientType, ClientConfig } from "@mcp_router/shared";
+import { MCPServerConfig, ClientType, ClientConfig } from "@kugouming/shared";
 import { v4 as uuidv4 } from "uuid";
 import { getSettingsService } from "@/main/modules/settings/settings.service";
 import { AppPaths } from "./app-paths";
@@ -10,7 +10,7 @@ import {
   findStandardAppDefinition,
 } from "./app-definitions";
 
-// Helper to match CLI arg variations like "@mcp_router/cli", "@mcp_router/cli@latest", "@mcp_router/cli@0.x",
+// Helper to match CLI arg variations like "@kugouming/cli", "@kugouming/cli@latest", "@kugouming/cli@0.x",
 // and legacy aliases like "mcpr-cli", "mcpr-cli@latest"
 function isMcpRouterCliArg(arg: string): boolean {
   if (!arg || typeof arg !== "string") return false;

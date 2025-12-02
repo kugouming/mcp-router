@@ -1,4 +1,4 @@
-import { Token, TokenServerAccess } from "@mcp_router/shared";
+import { Token, TokenServerAccess } from "@kugouming/shared";
 import { getSharedConfigManager } from "../../infrastructure/shared-config-manager";
 
 /**

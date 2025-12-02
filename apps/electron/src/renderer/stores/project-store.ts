@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import type { Project } from "@mcp_router/shared";
-import { UNASSIGNED_PROJECT_ID as SHARED_UNASSIGNED_PROJECT_ID } from "@mcp_router/shared";
+import type { Project } from "@kugouming/shared";
+import { UNASSIGNED_PROJECT_ID as SHARED_UNASSIGNED_PROJECT_ID } from "@kugouming/shared";
 import { useWorkspaceStore } from "./workspace-store";
 
 type CollapsedState = Record<string, boolean>; // projectId -> collapsed

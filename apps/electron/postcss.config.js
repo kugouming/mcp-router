@@ -1,1 +1,1 @@
-module.exports = require("@mcp_router/tailwind-config/postcss.config.js");
+module.exports = require("@kugouming/tailwind-config/postcss.config.js");

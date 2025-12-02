@@ -1,6 +1,6 @@
 import React from "react";
 import { RotateCw } from "lucide-react";
-import { Card, CardContent } from "@mcp_router/ui";
+import { Card, CardContent } from "@kugouming/ui";
 
 interface LoadingCardProps {
   message?: string;

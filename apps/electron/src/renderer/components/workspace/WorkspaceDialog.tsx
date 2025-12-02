@@ -13,7 +13,7 @@ import {
   AlertDescription,
   RadioGroup,
   RadioGroupItem,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import { useWorkspaceStore } from "@/renderer/stores/workspace-store";
 import { AlertCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";

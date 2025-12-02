@@ -1,4 +1,4 @@
-const sharedConfig = require("@mcp_router/tailwind-config/tailwind.config.js");
+const sharedConfig = require("@kugouming/tailwind-config/tailwind.config.js");
 
 module.exports = {
   darkMode: ["class"],

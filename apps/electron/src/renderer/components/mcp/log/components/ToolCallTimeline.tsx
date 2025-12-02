@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { formatDateI18n } from "@/renderer/utils/date-utils";
-import { RequestLogEntry } from "@mcp_router/shared";
-import { Card } from "@mcp_router/ui";
+import { RequestLogEntry } from "@kugouming/shared";
+import { Card } from "@kugouming/ui";
 
 interface ToolCallTimelineProps {
   logs: RequestLogEntry[];

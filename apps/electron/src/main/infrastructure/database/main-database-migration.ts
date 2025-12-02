@@ -1,5 +1,5 @@
 import { SqliteManager } from "./sqlite-manager";
-import { Migration } from "@mcp_router/shared";
+import { Migration } from "@kugouming/shared";
 
 /**
  * データベースマイグレーション管理クラス

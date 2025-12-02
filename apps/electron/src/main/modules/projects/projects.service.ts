@@ -1,6 +1,6 @@
 import { SingletonService } from "@/main/modules/singleton-service";
 import { ProjectRepository } from "./projects.repository";
-import type { Project } from "@mcp_router/shared";
+import type { Project } from "@kugouming/shared";
 import type { MCPServerManager } from "@/main/modules/mcp-server-manager/mcp-server-manager";
 import { McpServerManagerRepository } from "../mcp-server-manager/mcp-server-manager.repository";
 

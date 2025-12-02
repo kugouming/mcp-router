@@ -8,7 +8,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import Manual from "./Manual";
 
 const DiscoverWrapper: React.FC = () => {

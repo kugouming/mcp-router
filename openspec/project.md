@@ -195,4 +195,4 @@ apps/electron/src/main/
 
 ### 发布渠道
 - **GitHub Releases** - 应用分发
-- **npm** - CLI 工具发布（`@mcp_router/cli`）
+- **npm** - CLI 工具发布（`@kugouming/cli`）

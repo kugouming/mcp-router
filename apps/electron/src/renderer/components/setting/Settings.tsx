@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Card, CardContent, CardHeader, CardTitle } from "@mcp_router/ui";
+import { Card, CardContent, CardHeader, CardTitle } from "@kugouming/ui";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
-import { Badge } from "@mcp_router/ui";
-import { Switch } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
+import { Badge } from "@kugouming/ui";
+import { Switch } from "@kugouming/ui";
 import { useThemeStore } from "@/renderer/stores";
 import { useAuthStore } from "../../stores";
 import { IconBrandDiscord } from "@tabler/icons-react";

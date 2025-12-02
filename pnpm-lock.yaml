@@ -104,16 +104,16 @@ importers:
       '@codemirror/view':
         specifier: ^6.38.8
         version: 6.38.8
-      '@mcp_router/remote-api-types':
+      '@kugouming/remote-api-types':
         specifier: workspace:*
         version: link:../../packages/remote-api-types
-      '@mcp_router/shared':
+      '@kugouming/shared':
         specifier: workspace:*
         version: link:../../packages/shared
-      '@mcp_router/tailwind-config':
+      '@kugouming/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@mcp_router/ui':
+      '@kugouming/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@modelcontextprotocol/sdk':
@@ -328,7 +328,7 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
     devDependencies:
-      '@mcp_router/shared':
+      '@kugouming/shared':
         specifier: workspace:*
         version: link:../shared
       '@types/node':
@@ -474,7 +474,7 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
     devDependencies:
-      '@mcp_router/tailwind-config':
+      '@kugouming/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
       '@types/react':

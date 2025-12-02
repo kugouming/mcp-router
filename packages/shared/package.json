@@ -1,5 +1,5 @@
 {
-  "name": "@mcp_router/shared",
+  "name": "@kugouming/shared",
   "version": "0.5.4",
   "private": true,
   "main": "dist/index.js",

@@ -1,4 +1,4 @@
-# @mcp_router/remote-api-types
+# @kugouming/remote-api-types
 
 tRPCクライアントパッケージ for MCP Router Remote API
 
@@ -11,7 +11,7 @@ tRPCクライアントパッケージ for MCP Router Remote API
 ### クライアント側（MCP Router）
 
 ```typescript
-import { createRemoteAPIClient } from '@mcp_router/remote-api-types';
+import { createRemoteAPIClient } from '@kugouming/remote-api-types';
 
 const client = createRemoteAPIClient({
   url: 'https://api.example.com',
@@ -44,7 +44,7 @@ import {
   updateServerSchema,
   deleteServerSchema,
   logQueryOptionsSchema 
-} from '@mcp_router/remote-api-types/schema';
+} from '@kugouming/remote-api-types/schema';
 
 const t = initTRPC.create();
 

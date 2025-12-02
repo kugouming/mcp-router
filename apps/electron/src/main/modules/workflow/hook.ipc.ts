@@ -1,6 +1,6 @@
 import { ipcMain } from "electron";
 import { getHookService } from "@/main/modules/workflow/hook.service";
-import type { HookModule } from "@mcp_router/shared";
+import type { HookModule } from "@kugouming/shared";
 
 /**
  * Hook Module関連のIPCハンドラーを登録

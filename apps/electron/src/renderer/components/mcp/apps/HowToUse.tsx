@@ -6,9 +6,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
-import { ScrollArea } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
+import { ScrollArea } from "@kugouming/ui";
 
 interface HowToUseProps {
   token?: string;
@@ -28,7 +28,7 @@ const HowToUseEN: React.FC<HowToUseProps> = ({ token }) => {
         <p className="mb-3 text-muted-foreground">
           {token
             ? "Connect to the MCP Router server:"
-            : "Connect using @mcp_router/cli:"}
+            : "Connect using @kugouming/cli:"}
         </p>
         <div className="overflow-x-auto w-full">
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
@@ -36,8 +36,8 @@ const HowToUseEN: React.FC<HowToUseProps> = ({ token }) => {
               ? `# Export token as environment variable
 export MCPR_TOKEN="${token}"
 
-npx -y @mcp_router/cli@latest connect`
-              : `npx -y @mcp_router/cli@latest connect`}
+npx -y @kugouming/cli@latest connect`
+              : `npx -y @kugouming/cli@latest connect`}
           </pre>
         </div>
       </div>
@@ -58,7 +58,7 @@ npx -y @mcp_router/cli@latest connect`
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect"
       ],
       "env": {
@@ -84,8 +84,8 @@ npx -y @mcp_router/cli@latest connect`
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
             {token
               ? `# After exporting MCPR_TOKEN
-npx -y @mcp_router/cli@latest connect --project "project-name"`
-              : `npx -y @mcp_router/cli@latest connect --project "project-name"`}
+npx -y @kugouming/cli@latest connect --project "project-name"`
+              : `npx -y @kugouming/cli@latest connect --project "project-name"`}
           </pre>
         </div>
         <p className="mb-3 text-muted-foreground">
@@ -100,7 +100,7 @@ npx -y @mcp_router/cli@latest connect --project "project-name"`
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect",
         "--project",
         "project-name"
@@ -128,7 +128,7 @@ const HowToUseJA: React.FC<HowToUseProps> = ({ token }) => {
         <p className="mb-3 text-muted-foreground">
           {token
             ? "トークンを環境変数として設定して接続します："
-            : "@mcp_router/cliを使って接続します："}
+            : "@kugouming/cliを使って接続します："}
         </p>
         <div className="overflow-x-auto w-full">
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
@@ -137,9 +137,9 @@ const HowToUseJA: React.FC<HowToUseProps> = ({ token }) => {
 export MCPR_TOKEN="${token}"
 
 # mcpr-cliを使って接続
-npx -y @mcp_router/cli@latest connect`
+npx -y @kugouming/cli@latest connect`
               : `# mcpr-cliを使って接続
-npx -y @mcp_router/cli@latest connect`}
+npx -y @kugouming/cli@latest connect`}
           </pre>
         </div>
       </div>
@@ -160,7 +160,7 @@ npx -y @mcp_router/cli@latest connect`}
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect"
       ],
       "env": {
@@ -185,8 +185,8 @@ npx -y @mcp_router/cli@latest connect`}
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
             {token
               ? `# MCPR_TOKENを設定済みの場合
-npx -y @mcp_router/cli@latest connect --project "project-name"`
-              : `npx -y @mcp_router/cli@latest connect --project "project-name"`}
+npx -y @kugouming/cli@latest connect --project "project-name"`
+              : `npx -y @kugouming/cli@latest connect --project "project-name"`}
           </pre>
         </div>
         <p className="mb-3 text-muted-foreground">
@@ -200,7 +200,7 @@ npx -y @mcp_router/cli@latest connect --project "project-name"`
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect",
         "--project",
         "project-name"
@@ -228,7 +228,7 @@ const HowToUseZH: React.FC<HowToUseProps> = ({ token }) => {
         <p className="mb-3 text-muted-foreground">
           {token
             ? "将令牌设置为环境变量后连接 MCP Router："
-            : "使用 @mcp_router/cli 建立连接："}
+            : "使用 @kugouming/cli 建立连接："}
         </p>
         <div className="overflow-x-auto w-full">
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
@@ -237,9 +237,9 @@ const HowToUseZH: React.FC<HowToUseProps> = ({ token }) => {
 export MCPR_TOKEN="${token}"
 
 # 使用 mcpr-cli 连接
-npx -y @mcp_router/cli@latest connect`
+npx -y @kugouming/cli@latest connect`
               : `# 使用 mcpr-cli 连接
-npx -y @mcp_router/cli@latest connect`}
+npx -y @kugouming/cli@latest connect`}
           </pre>
         </div>
       </div>
@@ -260,7 +260,7 @@ npx -y @mcp_router/cli@latest connect`}
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect"
       ],
       "env": {
@@ -283,8 +283,8 @@ npx -y @mcp_router/cli@latest connect`}
           <pre className="bg-muted p-4 rounded-lg text-xs whitespace-pre min-w-min w-max">
             {token
               ? `# 设置 MCPR_TOKEN 之后
-npx -y @mcp_router/cli@latest connect --project "project-name"`
-              : `npx -y @mcp_router/cli@latest connect --project "project-name"`}
+npx -y @kugouming/cli@latest connect --project "project-name"`
+              : `npx -y @kugouming/cli@latest connect --project "project-name"`}
           </pre>
         </div>
         <p className="mb-3 text-muted-foreground">
@@ -298,7 +298,7 @@ npx -y @mcp_router/cli@latest connect --project "project-name"`
       "command": "npx",
       "args": [
         "-y",
-        "@mcp_router/cli@latest",
+        "@kugouming/cli@latest",
         "connect",
         "--project",
         "project-name"

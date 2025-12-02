@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { HookModule, PlatformAPI } from "@mcp_router/shared";
+import type { HookModule, PlatformAPI } from "@kugouming/shared";
 import { toast } from "sonner";
 
 export interface HookStoreState {

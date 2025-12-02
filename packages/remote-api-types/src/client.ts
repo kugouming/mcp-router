@@ -4,7 +4,7 @@ import {
   TRPCClientError,
 } from "@trpc/client";
 import superjson from "superjson";
-import { MCPServer } from "@mcp_router/shared";
+import { MCPServer } from "@kugouming/shared";
 import type {
   ServerStatus,
   CreateServerInput,

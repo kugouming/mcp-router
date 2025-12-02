@@ -1,6 +1,6 @@
 import { TokenValidator } from "./token-validator";
 import { getLogService } from "@/main/modules/mcp-logger/mcp-logger.service";
-import { McpManagerRequestLogEntry as RequestLogEntry } from "@mcp_router/shared";
+import { McpManagerRequestLogEntry as RequestLogEntry } from "@kugouming/shared";
 
 /**
  * Base class for request handlers with common error handling patterns

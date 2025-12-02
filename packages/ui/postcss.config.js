@@ -1,3 +1,3 @@
-const sharedConfig = require("@mcp_router/tailwind-config/postcss.config.js");
+const sharedConfig = require("@kugouming/tailwind-config/postcss.config.js");
 
 module.exports = sharedConfig;

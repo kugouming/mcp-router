@@ -1,4 +1,4 @@
-# @mcp_router/tailwind-config
+# @kugouming/tailwind-config
 
 Shared Tailwind CSS configuration for the MCP Router monorepo.
 
@@ -10,7 +10,7 @@ In your CSS file:
 
 ```css
 /* Import the shared theme */
-@import "@mcp_router/tailwind-config/theme.css";
+@import "@kugouming/tailwind-config/theme.css";
 
 /* Add any additional app-specific styles */
 ```
@@ -21,7 +21,7 @@ In your `tailwind.config.js`:
 
 ```js
 module.exports = {
-  presets: [require("@mcp_router/tailwind-config/tailwind.config.js")],
+  presets: [require("@kugouming/tailwind-config/tailwind.config.js")],
   content: [
     // Your app's content paths
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -33,7 +33,7 @@ module.exports = {
 ### Accessing theme values programmatically
 
 ```js
-const { colors, radius } = require("@mcp_router/tailwind-config");
+const { colors, radius } = require("@kugouming/tailwind-config");
 
 // Use in your JavaScript/TypeScript code
 console.log(colors.light.primary); // 'oklch(0.205 0 0)'
@@ -43,7 +43,7 @@ console.log(colors.dark.primary); // 'oklch(0.985 0 0)'
 ### Generating CSS programmatically
 
 ```js
-const { generateThemeCSS } = require("@mcp_router/tailwind-config");
+const { generateThemeCSS } = require("@kugouming/tailwind-config");
 
 // Generate the complete theme CSS
 const themeCSS = generateThemeCSS();

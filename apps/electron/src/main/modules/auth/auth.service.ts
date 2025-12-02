@@ -4,7 +4,7 @@ import crypto from "crypto";
 import { shell } from "electron";
 import { fetchWithToken } from "@/main/utils/fetch-utils";
 import { machineIdSync } from "node-machine-id";
-import { PKCEAuthState } from "@mcp_router/shared";
+import { PKCEAuthState } from "@kugouming/shared";
 
 // Store the current authentication state
 let currentAuthState: PKCEAuthState | null = null;

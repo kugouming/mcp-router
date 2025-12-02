@@ -9,7 +9,7 @@ import {
   AvatarFallback,
   AvatarImage,
   Button,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import { Check, ChevronDown, Plus, Settings, Monitor } from "lucide-react";
 import { useWorkspaceStore } from "@/renderer/stores/workspace-store";
 import { WorkspaceDialog } from "./WorkspaceDialog";

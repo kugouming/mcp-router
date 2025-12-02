@@ -5,15 +5,15 @@
     "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
-    "composite": false,
-    "incremental": false,
     "baseUrl": ".",
     "paths": {
-      "@mcp_router/shared": ["../shared/src"],
-      "@mcp_router/shared/*": ["../shared/src/*"]
-    }
+      "@kugouming/shared": ["../shared/src"],
+      "@kugouming/shared/*": ["../shared/src/*"]
+    },
+    "incremental": false,
+    "composite": false
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"],
   "references": [
     { "path": "../shared" }

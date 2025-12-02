@@ -1,5 +1,5 @@
 import { SingletonService } from "@/main/modules/singleton-service";
-import { MCPServer, MCPServerConfig } from "@mcp_router/shared";
+import { MCPServer, MCPServerConfig } from "@kugouming/shared";
 import { logInfo } from "@/main/utils/logger";
 import { McpServerManagerRepository } from "./mcp-server-manager.repository";
 import { TokenManager } from "@/main/modules/mcp-apps-manager/token-manager";

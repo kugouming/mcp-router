@@ -1,9 +1,9 @@
 import React from "react";
-import { MCPServer } from "@mcp_router/shared";
-import { Card, CardContent } from "@mcp_router/ui";
-import { Badge } from "@mcp_router/ui";
-import { Switch } from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
+import { MCPServer } from "@kugouming/shared";
+import { Card, CardContent } from "@kugouming/ui";
+import { Badge } from "@kugouming/ui";
+import { Switch } from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
 import { AlertCircle, Settings as SettingsIcon } from "lucide-react";
 import { cn } from "@/renderer/utils/tailwind-utils";
 import { useTranslation } from "react-i18next";

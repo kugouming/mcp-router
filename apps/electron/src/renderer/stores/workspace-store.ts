@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { electronPlatformAPI } from "../platform-api/electron-platform-api";
 import { RemotePlatformAPI } from "../platform-api/remote-platform-api";
-import type { PlatformAPI, Workspace } from "@mcp_router/shared";
+import type { PlatformAPI, Workspace } from "@kugouming/shared";
 import { useAuthStore, useServerStore } from "@/renderer/stores";
 
 interface WorkspaceState {

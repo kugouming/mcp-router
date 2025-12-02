@@ -1,4 +1,4 @@
-# @mcp_router/cli
+# @kugouming/cli
 
 Command-line interface for the MCP Router - connect to a running MCP HTTP server via the command line.
 
@@ -20,13 +20,13 @@ The `connect` command creates a bridge from stdio to HTTP, allowing stdio-based 
 ```bash
 export MCPR_TOKEN=your_access_token
 # Connect to a local MCP Router
-npx @mcp_router/cli connect
+npx @kugouming/cli connect
 
 # Connect to a custom host/port
-npx @mcp_router/cli connect --host example.com --port 8080
+npx @kugouming/cli connect --host example.com --port 8080
 
 # Display help
-npx @mcp_router/cli --help
+npx @kugouming/cli --help
 ```
 
 ### Serve Command (HTTP → Stdio)
@@ -35,16 +35,16 @@ The `serve` command creates an HTTP server that forwards requests to a stdio-bas
 
 ```bash
 # Start an HTTP server on default port 3283 that forwards to a stdio MCP server
-npx @mcp_router/cli serve npx @modelcontextprotocol/server-filesystem /path/to/dir
+npx @kugouming/cli serve npx @modelcontextprotocol/server-filesystem /path/to/dir
 
 # Use a custom port
-npx @mcp_router/cli serve --port 8080 python my-mcp-server.py
+npx @kugouming/cli serve --port 8080 python my-mcp-server.py
 
 # Enable authentication with a Bearer token
-npx @mcp_router/cli serve --token secret123 python my-mcp-server.py
+npx @kugouming/cli serve --token secret123 python my-mcp-server.py
 
 # Pass arguments to the MCP server
-npx @mcp_router/cli serve -- node my-server.js --config config.json
+npx @kugouming/cli serve -- node my-server.js --config config.json
 ```
 
 This is useful when you have a stdio-based MCP server that you want to expose via HTTP.

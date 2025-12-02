@@ -8,7 +8,7 @@ import {
   Token,
   DEFAULT_APP_SETTINGS,
   TokenServerAccess,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { SqliteManager } from "./database/sqlite-manager";
 
 /**

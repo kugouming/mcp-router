@@ -11,7 +11,7 @@ export * from "./project-store";
 export * from "./theme-store";
 
 // Import platform API type
-import type { PlatformAPI } from "@mcp_router/shared";
+import type { PlatformAPI } from "@kugouming/shared";
 
 // Import store factories
 import { createServerStore } from "./server-store";

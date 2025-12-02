@@ -6,21 +6,20 @@
     "baseUrl": ".",
     "outDir": "dist",
     "jsx": "react-jsx",
-    "composite": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["ES2020", "dom"],
     "types": ["node", "electron"],
     "paths": {
       "@/*": ["./src/*"],
-      "@mcp_router/shared": ["../../packages/shared/src"],
-      "@mcp_router/ui": ["../../packages/ui/src"],
-      "@mcp_router/ui/*": ["../../packages/ui/src/*"]
+      "@kugouming/shared": ["../../packages/shared/src"],
+      "@kugouming/ui": ["../../packages/ui/src"],
+      "@kugouming/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": ["src/**/*", "src/**/*.json", "../../packages/shared/src/types/svg.d.ts"],
   "references": [
-    { "path": "../../packages/shared" },
+    { "path": "../../packages/shared" },  
     { "path": "../../packages/ui" }
   ]
 }

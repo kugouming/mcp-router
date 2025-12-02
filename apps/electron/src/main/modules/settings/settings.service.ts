@@ -1,5 +1,5 @@
 import { app, nativeTheme } from "electron";
-import { AppSettings, Theme } from "@mcp_router/shared";
+import { AppSettings, Theme } from "@kugouming/shared";
 import { SingletonService } from "../singleton-service";
 import { SettingsRepository } from "./settings.repository";
 

@@ -1,5 +1,5 @@
 {
-  "name": "@mcp_router/tailwind-config",
+  "name": "@kugouming/tailwind-config",
   "version": "0.5.4",
   "private": true,
   "main": "index.js",

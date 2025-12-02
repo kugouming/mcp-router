@@ -8,12 +8,12 @@ import type {
   MCPServer,
   Project,
   TokenServerAccess,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import {
   CreateServerInput,
   WorkflowDefinition,
   HookModule,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { McpAppsManagerResult, McpApp } from "@/main/modules/mcp-apps-service";
 import { ServerPackageUpdates } from "./lib/utils/backend/package-version-resolver";
 

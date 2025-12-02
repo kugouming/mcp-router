@@ -1,6 +1,6 @@
 import { app } from "electron";
 import * as path from "path";
-import { MCPServerConfig, MCPInputParam } from "@mcp_router/shared";
+import { MCPServerConfig, MCPInputParam } from "@kugouming/shared";
 import { DxtManifest } from "@anthropic-ai/dxt";
 import { v4 as uuidv4 } from "uuid";
 

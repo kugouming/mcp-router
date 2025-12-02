@@ -17,7 +17,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@mcp_router/ui";
+} from "@kugouming/ui";
 import { Monitor, Pencil, Trash2, Plus } from "lucide-react";
 import { useWorkspaceStore } from "@/renderer/stores/workspace-store";
 import { WorkspaceDialog } from "./WorkspaceDialog";

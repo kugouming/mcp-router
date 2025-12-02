@@ -1,6 +1,6 @@
 import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
 import { TokenManager } from "@/main/modules/mcp-apps-manager/token-manager";
-import { TokenServerAccess } from "@mcp_router/shared";
+import { TokenServerAccess } from "@kugouming/shared";
 
 export class TokenValidator {
   private tokenManager: TokenManager;

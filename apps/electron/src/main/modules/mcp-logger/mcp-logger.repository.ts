@@ -8,7 +8,7 @@ import {
   RequestLogEntryInput,
   RequestLogQueryOptions,
   RequestLogQueryResult,
-} from "@mcp_router/shared";
+} from "@kugouming/shared";
 import { encodeCursor, decodeCursor } from "@/renderer/utils/cursor";
 
 /**

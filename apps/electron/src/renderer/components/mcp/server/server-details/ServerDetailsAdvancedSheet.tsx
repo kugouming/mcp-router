@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { MCPServer, MCPTool } from "@mcp_router/shared";
+import { MCPServer, MCPTool } from "@kugouming/shared";
 import { useTranslation } from "react-i18next";
 import {
   Settings2,
@@ -18,13 +18,13 @@ import {
   SheetTitle,
   SheetFooter,
   SheetDescription,
-} from "@mcp_router/ui";
-import { Button } from "@mcp_router/ui";
-import { Input } from "@mcp_router/ui";
-import { Label } from "@mcp_router/ui";
-import { Badge } from "@mcp_router/ui";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@mcp_router/ui";
-import { Switch } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Button } from "@kugouming/ui";
+import { Input } from "@kugouming/ui";
+import { Label } from "@kugouming/ui";
+import { Badge } from "@kugouming/ui";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@kugouming/ui";
+import { Switch } from "@kugouming/ui";
 import FinalCommandDisplay from "./FinalCommandDisplay";
 import ServerDetailsRemote from "./ServerDetailsRemote";
 import ServerDetailsEnvironment from "./ServerDetailsEnvironment";

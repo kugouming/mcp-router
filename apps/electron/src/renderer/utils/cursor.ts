@@ -1,4 +1,4 @@
-import { CursorData } from "@mcp_router/shared";
+import { CursorData } from "@kugouming/shared";
 
 /**
  * カーソルのエンコード・デコードユーティリティ

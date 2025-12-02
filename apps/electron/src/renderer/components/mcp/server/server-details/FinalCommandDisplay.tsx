@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
-import { MCPServer } from "@mcp_router/shared";
+import { MCPServer } from "@kugouming/shared";
 import { useTranslation } from "react-i18next";
 import { Info } from "lucide-react";
-import { ScrollArea } from "@mcp_router/ui";
+import { ScrollArea } from "@kugouming/ui";
 
 interface FinalCommandDisplayProps {
   server: MCPServer;

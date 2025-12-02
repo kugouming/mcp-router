@@ -1,4 +1,4 @@
-import { ClientType } from "@mcp_router/shared";
+import { ClientType } from "@kugouming/shared";
 import { AppPaths } from "./app-paths";
 
 export type StandardAppId =

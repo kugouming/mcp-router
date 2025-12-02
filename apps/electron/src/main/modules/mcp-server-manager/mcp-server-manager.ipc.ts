@@ -1,5 +1,5 @@
 import { ipcMain, dialog, BrowserWindow } from "electron";
-import { MCPServerConfig, CreateServerInput } from "@mcp_router/shared";
+import { MCPServerConfig, CreateServerInput } from "@kugouming/shared";
 import { processDxtFile } from "@/main/modules/mcp-server-manager/dxt-processor/dxt-processor";
 import type { MCPServerManager } from "@/main/modules/mcp-server-manager/mcp-server-manager";
 

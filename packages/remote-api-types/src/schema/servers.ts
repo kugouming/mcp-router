@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { MCPServer } from "@mcp_router/shared";
+import { MCPServer } from "@kugouming/shared";
 
 // MCPServerConfig Zodスキーマ
 export const mcpServerConfigSchema = z.object({

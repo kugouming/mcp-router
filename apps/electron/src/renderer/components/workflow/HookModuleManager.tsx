@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { HookModule } from "@mcp_router/shared";
+import { HookModule } from "@kugouming/shared";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@mcp_router/ui";
-import { Button, Input, Label } from "@mcp_router/ui";
+} from "@kugouming/ui";
+import { Button, Input, Label } from "@kugouming/ui";
 import { Plus, Edit2, Trash2 } from "lucide-react";
 import HookModuleEditor from "./HookModuleEditor";
 import { useHookStore } from "../../stores/hook-store";
