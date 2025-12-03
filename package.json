@@ -16,6 +16,7 @@
     "build": "turbo run build",
     "publish": "turbo run publish --filter=@kugouming/electron",
     "make": "turbo run make",
+    "make:universal": "turbo run make:universal",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs --fix",
     "typecheck": "turbo run typecheck",
     "knip": "knip",

@@ -23,12 +23,26 @@ const hasNotarizeCreds = !!(
   process.env.APPLE_API_ISSUER
 );
 
+// Determine target architecture(s)
+// If BUILD_UNIVERSAL is set, build for both x64 and arm64 (Universal Binary)
+// Otherwise, use the specified arch or default to current arch
+const getTargetArch = (): string | string[] => {
+  if (process.env.BUILD_UNIVERSAL === "true") {
+    return ["x64", "arm64"];
+  }
+  return (process.env.npm_config_target_arch as any) || process.arch;
+};
+
+const targetArch = getTargetArch();
+const isUniversal = Array.isArray(targetArch);
+
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
     icon: "./public/images/icon/icon",
-    // Support both Intel and Apple Silicon architectures - use target arch from env
-    arch: (process.env.npm_config_target_arch as any) || process.arch,
+    // Support both Intel and Apple Silicon architectures
+    // For Universal Binary, use array of architectures
+    arch: targetArch,
     // Only sign/notarize on macOS when credentials are available (CI-safe)
     osxSign: isMac && hasSignIdentity
       ? {
@@ -44,8 +58,10 @@ const config: ForgeConfig = {
       : undefined,
   },
   rebuildConfig: {
-    // Force rebuild native modules for the target architecture
-    arch: (process.env.npm_config_target_arch as any) || process.arch,
+    // Force rebuild native modules for the target architecture(s)
+    // For Universal Binary, Electron Forge will automatically rebuild for both architectures
+    // For single arch, use the specified arch
+    arch: isUniversal ? ["x64", "arm64"] : targetArch,
   },
   makers: [
     new MakerSquirrel({
