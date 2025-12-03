@@ -1,4 +1,5 @@
 import { app, Menu, Tray, nativeImage, type NativeImage } from "electron";
+import path from "node:path";
 import { MCPServerManager } from "@/main/modules/mcp-server-manager/mcp-server-manager";
 import { mainWindow } from "../../main";
 
@@ -33,16 +34,75 @@ function getTrayIcon(): NativeImage {
  * @param serverManager The MCPServerManager instance to get server info
  */
 export function createTray(serverManager: MCPServerManager): Tray | null {
+  // On macOS, ensure app is ready before creating tray
+  if (process.platform === "darwin" && !app.isReady()) {
+    console.warn("App not ready yet, tray creation may fail");
+  }
+
   try {
     const icon = getTrayIcon();
+    
+    // Validate icon before creating tray
+    if (icon.isEmpty()) {
+      throw new Error("Tray icon is empty");
+    }
 
     tray = new Tray(icon);
     tray.setToolTip("MCP Router");
+    
+    // On macOS, ensure the tray is visible
+    if (process.platform === "darwin") {
+      // Force tray to be visible by setting it again
+      // This helps ensure the icon appears in the menu bar
+      tray.setImage(icon);
+    }
+    
+    console.log("Tray icon created successfully");
   } catch (error) {
-    console.error("Failed to create tray with icon, using default:", error);
-    // As a last resort, use a system standard icon
-    tray = new Tray(app.getPath("exe"));
-    tray.setToolTip("MCP Router");
+    console.error("Failed to create tray with icon:", error);
+    // Try to use app icon as fallback - check multiple possible paths
+    try {
+      const fs = require("fs");
+      const possibleIconPaths = [
+        path.join(app.getAppPath(), "assets", "icon.png"),
+        path.join(app.getAppPath(), "..", "..", "public", "images", "icon", "icon.png"),
+        path.join(process.cwd(), "apps", "electron", "public", "images", "icon", "icon.png"),
+        path.join(__dirname, "..", "..", "..", "public", "images", "icon", "icon.png"),
+      ];
+      
+      let fallbackIcon: NativeImage | null = null;
+      for (const iconPath of possibleIconPaths) {
+        try {
+          if (fs.existsSync(iconPath)) {
+            fallbackIcon = nativeImage.createFromPath(iconPath);
+            if (!fallbackIcon.isEmpty()) {
+              break;
+            }
+          }
+        } catch {
+          // Continue to next path
+        }
+      }
+      
+      if (fallbackIcon && !fallbackIcon.isEmpty()) {
+        tray = new Tray(normalizeTrayIcon(fallbackIcon));
+        tray.setToolTip("MCP Router");
+        console.log("Using fallback icon for tray");
+      } else {
+        throw new Error("Fallback icon is also empty");
+      }
+    } catch (fallbackError) {
+      console.error("Failed to create tray with fallback icon:", fallbackError);
+      // Last resort: try to create tray with any available icon
+      try {
+        tray = new Tray(app.getPath("exe"));
+        tray.setToolTip("MCP Router");
+        console.log("Using executable path as tray icon");
+      } catch (lastResortError) {
+        console.error("Failed to create tray completely:", lastResortError);
+        return null;
+      }
+    }
   }
 
   // Set tray context menu

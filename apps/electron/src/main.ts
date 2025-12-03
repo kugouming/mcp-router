@@ -87,6 +87,26 @@ type CreateWindowOptions = {
 };
 
 const createWindow = ({ showOnCreate = true }: CreateWindowOptions = {}) => {
+  // Get icon path - try multiple locations for development and production
+  let iconPath: string | undefined;
+  const possibleIconPaths = [
+    path.join(__dirname, "assets/icon.png"), // Production path
+    path.join(__dirname, "../../public/images/icon/icon.png"), // Development path
+    path.join(process.cwd(), "apps/electron/public/images/icon/icon.png"), // Alternative dev path
+  ];
+  
+  for (const possiblePath of possibleIconPaths) {
+    try {
+      const fs = require("fs");
+      if (fs.existsSync(possiblePath)) {
+        iconPath = possiblePath;
+        break;
+      }
+    } catch {
+      // Ignore errors when checking file existence
+    }
+  }
+
   // Platform-specific window options
   const windowOptions: Electron.BrowserWindowConstructorOptions = {
     width: 1200,
@@ -94,7 +114,7 @@ const createWindow = ({ showOnCreate = true }: CreateWindowOptions = {}) => {
     minWidth: 800,
     minHeight: 600,
     title: "MCP Router",
-    icon: path.join(__dirname, "assets/icon.png"),
+    ...(iconPath ? { icon: iconPath } : {}), // Only set icon if found
     autoHideMenuBar: true,
     show: false,
     webPreferences: {
@@ -287,17 +307,32 @@ function initUI({
   // メインウィンドウ作成
   createWindow({ showOnCreate: showMainWindow });
 
-  if (!showMainWindow && process.platform === "darwin" && app.dock) {
-    app.dock.hide();
-  }
-
   // Platform APIマネージャーにメインウィンドウを設定
   if (mainWindow) {
     getPlatformAPIManager().setMainWindow(mainWindow);
   }
 
-  // システムトレイ作成
-  createTray(serverManager);
+  // システムトレイ作成（Dock を隠す前に作成する必要がある）
+  // On macOS, tray icon must be created before hiding the dock
+  const trayResult = createTray(serverManager);
+  
+  if (!trayResult) {
+    console.error("Failed to create tray icon - this is critical for menu bar apps");
+  }
+
+  // macOS でウィンドウを表示しない場合は Dock を隠す
+  // ただし、トレイアイコンが正常に作成された後にのみ隠す
+  if (!showMainWindow && process.platform === "darwin" && app.dock) {
+    // トレイアイコンが作成されるまで少し待つ
+    // これにより、macOS がメニューバーアイコンを認識する時間を確保
+    setTimeout(() => {
+      if (trayResult && app.dock) {
+        app.dock.hide();
+      } else if (!trayResult) {
+        console.warn("Not hiding dock because tray icon creation failed");
+      }
+    }, 100);
+  }
 
   // トレイコンテキストメニューの定期更新を設定
   setupTrayUpdateTimer(serverManager);

@@ -150,6 +150,7 @@ export function setupMcpAppsHandlers(): void {
   }
   
   // Final verification: Try to access internal handlers map
+  // Note: Electron's internal handler map structure may vary, so this is just for logging
   try {
     const ipcMainInternal = ipcMain as any;
     const handlerMap = ipcMainInternal._handlers || ipcMainInternal.listeners || {};
@@ -162,11 +163,17 @@ export function setupMcpAppsHandlers(): void {
     if (handlerMap["mcp-apps:add"]) {
       console.log("[MCP Apps] ✓ mcp-apps:add confirmed in handler map");
     } else {
-      console.error("[MCP Apps] ✗ ERROR: mcp-apps:add NOT found in handler map!");
-      console.error("[MCP Apps] Available handlers:", Object.keys(handlerMap).filter((k: string) => k.startsWith("mcp-apps:")));
+      // This is not necessarily an error - Electron's internal structure may not expose handlers this way
+      // The handlers are registered via ipcMain.handle() which is the correct API
+      console.log("[MCP Apps] Note: mcp-apps:add not found in internal map (this may be normal)");
+      const availableHandlers = Object.keys(handlerMap).filter((k: string) => k.startsWith("mcp-apps:"));
+      if (availableHandlers.length > 0) {
+        console.log("[MCP Apps] Available handlers in map:", availableHandlers);
+      }
     }
   } catch (verifyError) {
-    console.warn("[MCP Apps] Could not access internal handler map:", verifyError);
+    // Not a critical error - handlers are registered via ipcMain.handle() API
+    console.log("[MCP Apps] Could not access internal handler map (this is normal):", verifyError);
   }
   
   console.log("[MCP Apps] ========== MCP apps IPC handlers setup completed ==========");
